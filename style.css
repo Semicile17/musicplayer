@@ -92,6 +92,7 @@ input[type="range"]{
     border:3px solid white;
 }
 .songitem{
+    margin-left:15vw;
     margin-top:5px;
     border: 1px solid maroon;
     height: 30px;
@@ -130,9 +131,12 @@ input[type="range"]{
 .splay:hover{
     font-size:24px;
 }
+.splay i:hover{
+    color:black;
+}
 .songinfo img{
     opacity:0;
-    transition:opacity 2s ease-in;
+    transition:opacity 0.8s ease-in;
     height:8px;
     margin-right:10px;
    
