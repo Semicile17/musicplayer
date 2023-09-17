@@ -234,7 +234,7 @@ input[type="range"]{
         border: 1px solid white;
         display: flex;
         flex-direction: column;
-        margin: 15px 15px;
+        margin: 15px 11px;
         width: 82%;
         min-height: 87vh;
         border-radius: 12px;
