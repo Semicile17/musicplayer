@@ -282,7 +282,7 @@ input[type="range"]{
         height: 95px;
         background-color: black;
         flex-direction: column;
-        width: 102vw;
+        width: 100vw;
     }
     #myprogressbar {
         margin-top: 24px;
