@@ -149,3 +149,83 @@ input[type="range"]{
     font-size:14px;
     font-family:'Varela Round',sans-serif;
 }
+@media only screen and (max-width:274px){
+    .container {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 11px;
+        width: 81%;
+        min-height: 87vh;
+        border-radius: 12px;
+        padding: 25px;
+        background-color: black;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        background-image: url(img1.jpg);
+        background-size: cover;
+        background-position-y: 0px;
+        background-position-x: -125px;
+        justify-content: center;
+    }
+    .songlist {
+        text-align: center;
+        margin-top: -48px;
+        font-size: 13px;
+        height: 32px;
+    }
+    .songitem {
+        margin-left: -7vw;
+        margin-top: 11px;
+        border: 1px solid maroon;
+        height: 30px;
+        display: flex;
+        background-color: #56e856;
+        width: 118%;
+        color: whitesmoke;
+        justify-content: normal;
+        align-items: center;
+        border-radius: 20px;
+    }
+    .sname {
+        margin-left: 4px;
+        width: 40%;
+        font-size: 14px;
+    }
+    .splay {
+        margin-left: 46px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .bottom {
+        margin-top: 0px;
+        bottom: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        height: 95px;
+        background-color: black;
+        flex-direction: column;
+        width: 108vw;
+    }
+    #myprogressbar {
+        margin-top: 17px;
+        margin-left: 6px;
+        width: 76vw;
+        cursor: pointer;
+    }
+    .icons {
+        margin-top: 33px;
+        cursor: pointer;
+    }
+    .songinfo {
+        color: white;
+        position: absolute;
+        left: 9vw;
+        font-size: 14px;
+        font-family: 'Varela Round',sans-serif;
+    }
+    
+    
+}
