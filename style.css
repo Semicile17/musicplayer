@@ -293,9 +293,15 @@ input[type="range"]{
     .songinfo {
         color: white;
         position: absolute;
-        left: 17vw;
+        left: 19vw;
         font-size: 14px;
         font-family: 'Varela Round',sans-serif;
+        margin-bottom: 21px;
     }
+    .icons {
+        cursor: pointer;
+        margin: 32px 0;
+    }
+    
     
 }
