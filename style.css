@@ -149,7 +149,7 @@ input[type="range"]{
     font-size:14px;
     font-family:'Varela Round',sans-serif;
 }
-@media only screen and (max-width:360px){
+@media only screen and (max-width:274px){
     .container {
         border: 1px solid white;
         display: flex;
@@ -227,5 +227,75 @@ input[type="range"]{
         font-family: 'Varela Round',sans-serif;
     }
     
+    
+}
+@media screen and (max-width:360px){
+    .container {
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px;
+        width: 82%;
+        min-height: 87vh;
+        border-radius: 12px;
+        padding: 25px;
+        background-color: black;
+        color: white;
+        font-family: 'Varela Round', sans-serif;
+        background-image: url(img1.jpg);
+        background-size: cover;
+        background-position-y: 0px;
+        background-position-x: -125px;
+        justify-content: center;
+    }
+    .songlist {
+        text-align: center;
+        margin-top: 11px;
+        font-size: 16px;
+        height: 32px;
+    }
+    .songitem {
+        margin-left: -6vw;
+        margin-top: 11px;
+        border: 1px solid maroon;
+        height: 40px;
+        display: flex;
+        background-color: #56e856;
+        width: 113%;
+        color: whitesmoke;
+        justify-content: normal;
+        align-items: center;
+        border-radius: 20px;
+    }
+    .sname {
+        margin-left: 56px;
+        width: 40%;
+        font-size: 14px;
+    }
+    .bottom {
+        margin-top: 0px;
+        bottom: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        height: 95px;
+        background-color: black;
+        flex-direction: column;
+        width: 104vw;
+    }
+    #myprogressbar {
+        margin-top: 24px;
+        margin-left: 11px;
+        width: 76vw;
+        cursor: pointer;
+    }
+    .songinfo {
+        color: white;
+        position: absolute;
+        left: 17vw;
+        font-size: 14px;
+        font-family: 'Varela Round',sans-serif;
+    }
     
 }
