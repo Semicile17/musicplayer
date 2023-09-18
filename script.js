@@ -10,6 +10,7 @@ audioelement=new Audio('audio1.mp3')
 let songitem=Array.from(document.getElementsByClassName('songitem'));
 pfor=document.getElementById('pfor');
 pback=document.getElementById('pback');
+mode=document.querySelector('.mode');
 
 let songs=[
    { songname: "Beggin'-By Maneskin",filepath:"audio1.mp3",coverpath:"cover1.png"},
@@ -119,6 +120,110 @@ pback.addEventListener('click',()=>{
         audioelement.play();
         masterplay.classList.remove('fa-play-circle');
         masterplay.classList.add('fa-pause-circle');
+
+})
+let p=0;
+mode.addEventListener('click',()=>{
+    if(p==0){
+
+    mode.textContent='Light';
+    mode.style.backgroundColor='#56e856';
+    mode.style.borderColor='black';
+    let w=document.getElementsByTagName('BODY')[0];
+    let a=document.getElementsByTagName('UL')[0];
+    w.style.backgroundColor="azure";
+    a.style.backgroundColor="#56e856";
+    
+    let tex=document.querySelector('#tex');
+    tex.style.color='azure';
+    
+    
+    bottom=document.querySelector('.bottom');
+    bottom.style.backgroundColor='#56e856';
+    document.querySelector('#home').style.color='azure';
+    document.querySelector('#about').style.color='azure';
+    si1=document.querySelector('.si1');
+    si1.style.backgroundColor='#071207';
+    si2=document.querySelector('.si2');
+    si2.style.backgroundColor='#071207';
+    si3=document.querySelector('.si3');
+    si3.style.backgroundColor='#071207';
+    si4=document.querySelector('.si4');
+    si4.style.backgroundColor='#071207';
+    si5=document.querySelector('.si5');
+    si5.style.backgroundColor='#071207';
+    si6=document.querySelector('.si6');
+    si6.style.backgroundColor='#071207';
+    si7=document.querySelector('.si7');
+    si7.style.backgroundColor='#071207';
+    si8=document.querySelector('.si8');
+    si8.style.backgroundColor='#071207';
+    si9=document.querySelector('.si9');
+    si9.style.backgroundColor='#071207';
+    si10=document.querySelector('.si10');
+    si10.style.backgroundColor='#071207';
+    let c=document.querySelectorAll('.img');
+    c.forEach(img=>{
+        img.setAttribute('style','border-color: #56e856');
+    })
+    let d=document.querySelectorAll('.songitem');
+    d.forEach(songitem=>{
+        songitem.setAttribute('style','border:1px solid azure ');
+    })
+    document.querySelector('.container').style.borderColor='#56e856';
+
+   
+   
+    
+    
+    p=p+1;
+    }
+    else{
+        mode.textContent='Dark';
+        mode.style.backgroundColor='black';
+        mode.style.borderColor='azure';
+        let w=document.getElementsByTagName('BODY')[0];
+        let a=document.getElementsByTagName('UL')[0];
+        
+        let tex=document.querySelector('#tex');
+        tex.style.color='azure';
+        
+        si1=document.querySelector('.si1');
+    si1.style.backgroundColor='#56e856';
+    si2=document.querySelector('.si2');
+    si2.style.backgroundColor='#56e856';
+    si3=document.querySelector('.si3');
+    si3.style.backgroundColor='#56e856';
+    si4=document.querySelector('.si4');
+    si4.style.backgroundColor='#56e856';
+    si5=document.querySelector('.si5');
+    si5.style.backgroundColor='#56e856';
+    si6=document.querySelector('.si6');
+    si6.style.backgroundColor='#56e856';
+    si7=document.querySelector('.si7');
+    si7.style.backgroundColor='#56e856';
+    si8=document.querySelector('.si8');
+    si8.style.backgroundColor='#56e856';
+    si9=document.querySelector('.si9');
+    si9.style.backgroundColor='#56e856';
+    si10=document.querySelector('.si10');
+    si10.style.backgroundColor='#56e856';
+        bottom=document.querySelector('.bottom');
+        bottom.style.backgroundColor='black';
+        document.querySelector('#home').style.color='azure';
+        document.querySelector('#about').style.color='azure';
+        w.style.backgroundColor="black";
+        a.style.backgroundColor="black";
+        let c=document.querySelectorAll('.img');
+    c.forEach(img=>{
+        img.setAttribute('style','border-color: azure');
+    })
+    let d=document.querySelectorAll('.songitem');
+    d.forEach(songitem=>{
+        songitem.setAttribute('style','border:1px solid maroon ');
+    })
+        p=p-1;
+    }
 
 })
 
