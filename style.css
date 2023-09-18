@@ -31,6 +31,17 @@ nav ul{
     font-size:1.4rem
 
 }
+.mode{
+    width:45px;
+    height:30px;
+    background-color:black;
+    color:white;
+    border:3px solid white;
+    border-radius:8px;
+    font-family: 'Ubuntu', sans-serif;
+    cursor:pointer;
+    
+}
 .logo img{
  padding:0 8px;  
  height:44px;
@@ -72,7 +83,7 @@ nav ul li{
 
 }
 input[type="range"]{
-    accent-color:#56e856;
+    accent-color:#063b06;
 }
 
 .icons{
@@ -118,7 +129,6 @@ input[type="range"]{
 }
 .sname:hover{
     font-size:16px;
-    color:black;
 }
 .stime{
     margin-left: 0px;
@@ -155,7 +165,7 @@ input[type="range"]{
         border: 1px solid white;
         display: flex;
         flex-direction: column;
-        margin: 15px 6px;
+        margin: 15px 11px;
         width: 81%;
         min-height: 87vh;
         border-radius: 12px;
@@ -217,7 +227,7 @@ input[type="range"]{
         cursor: pointer;
     }
     .icons {
-        margin-top: 38px;
+        margin-top: 33px;
         cursor: pointer;
     }
     .songinfo {
@@ -231,11 +241,19 @@ input[type="range"]{
     
 }
 @media screen and (max-width:360px){
+    nav ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        height: 65px;
+        background-color: black;
+        width: 374px;
+    }
     .container {
         border: 1px solid white;
         display: flex;
         flex-direction: column;
-        margin: 15px 11px;
+        margin: 15px 15px;
         width: 82%;
         min-height: 87vh;
         border-radius: 12px;
@@ -251,7 +269,7 @@ input[type="range"]{
     }
     .songlist {
         text-align: center;
-        margin-top: -49px;
+        margin-top: 11px;
         font-size: 16px;
         height: 32px;
     }
@@ -283,7 +301,7 @@ input[type="range"]{
         height: 95px;
         background-color: black;
         flex-direction: column;
-        width: 100vw;
+        width: 104vw;
     }
     #myprogressbar {
         margin-top: 24px;
