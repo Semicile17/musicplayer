@@ -66,6 +66,21 @@ nav ul li{
     
     background-position-y: -130px;
 }
+.coverimages{
+    border: 4px solid azure;
+    position: absolute;
+    z-index: 9;
+    height: 296px;
+    width: 292px;
+    background-color: #e3e3e3;
+    margin-left: 750px;
+    margin-top: 97px;
+    border-radius: 9px;
+    
+}
+.coverimages:hover{
+    border-color:#56e856;
+}
 .songlist{
     height:32px;
 }
@@ -103,7 +118,7 @@ input[type="range"]{
     border:3px solid white;
 }
 .songitem{
-    margin-left:15vw;
+    
     margin-top:5px;
     border: 1px solid maroon;
     height: 30px;
@@ -178,6 +193,9 @@ input[type="range"]{
         background-position-y: 0px;
         background-position-x: -125px;
         justify-content: center;
+    }
+    .coverimages{
+        display:none;
     }
     .songlist {
         text-align: center;
@@ -266,6 +284,9 @@ input[type="range"]{
         background-position-y: 0px;
         background-position-x: -125px;
         justify-content: center;
+    }
+    .coverimages{
+        display:none;
     }
     .songlist {
         text-align: center;

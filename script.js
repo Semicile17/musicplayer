@@ -11,6 +11,12 @@ let songitem=Array.from(document.getElementsByClassName('songitem'));
 pfor=document.getElementById('pfor');
 pback=document.getElementById('pback');
 mode=document.querySelector('.mode');
+coverimages=document.querySelector('.coverimages')
+coverimages.style.backgroundImage=`url(cover${songindex}.png)`;
+coverimages.style.backgroundSize='contain';
+coverimages.style.backgroundRepeat='no-repeat';
+coverimages.style.backgroundPosition='center';
+
 
 let songs=[
    { songname: "Beggin'-By Maneskin",filepath:"audio1.mp3",coverpath:"cover1.png"},
@@ -63,6 +69,7 @@ myprogressbar.addEventListener('change',()=>{
 })
 const makeallplays=()=>{
     Array.from(document.getElementsByClassName('songitemplay')).forEach((element)=>{
+         
         element.classList.add('fa-play-circle')
         element.classList.remove('fa-pause-circle');
     })
@@ -76,6 +83,10 @@ Array.from(document.getElementsByClassName('songitemplay')).forEach((element)=>{
        
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
+        coverimages.style.backgroundImage=`url(cover${songindex}.png)`;
+coverimages.style.backgroundSize='contain';
+coverimages.style.backgroundRepeat='no-repeat';
+coverimages.style.backgroundPosition='center';
         audioelement.src=`audio${songindex}.mp3`;
        
         audioelement.currentTime=0;
@@ -95,7 +106,10 @@ pfor.addEventListener('click',()=>{
     else{
         songindex+=1;
     }
-   
+    coverimages.style.backgroundImage=`url(cover${songindex}.png)`;
+    coverimages.style.backgroundSize='contain';
+    coverimages.style.backgroundRepeat='no-repeat';
+    coverimages.style.backgroundPosition='center';
     audioelement.src=`audio${songindex}.mp3`;
     mastersname.innerText=songs[songindex-1].songname;
     gif.style.opacity=1;
@@ -112,7 +126,10 @@ pback.addEventListener('click',()=>{
     else{
         songindex-=1;
     }
-   
+    coverimages.style.backgroundImage=`url(cover${songindex}.png)`;
+coverimages.style.backgroundSize='contain';
+coverimages.style.backgroundRepeat='no-repeat';
+coverimages.style.backgroundPosition='center';
     audioelement.src=`audio${songindex}.mp3`;
     mastersname.innerText=songs[songindex-1].songname;
     gif.style.opacity=1;
@@ -169,6 +186,7 @@ mode.addEventListener('click',()=>{
     let d=document.querySelectorAll('.songitem');
     d.forEach(songitem=>{
         songitem.setAttribute('style','border:1px solid azure ');
+        songitem.setAttribute('style','hover{border:5px solid black;}');
     })
     document.querySelector('.container').style.borderColor='#56e856';
 
@@ -221,6 +239,7 @@ mode.addEventListener('click',()=>{
     let d=document.querySelectorAll('.songitem');
     d.forEach(songitem=>{
         songitem.setAttribute('style','border:1px solid maroon ');
+        songitem.setAttribute('style','hover{border:5px solid azure;}');
     })
         p=p-1;
     }
